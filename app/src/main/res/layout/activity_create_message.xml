@@ -6,17 +6,31 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- TextView para el historial de mensajes -->
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historial de mensajes"
+        android:paddingBottom="16dp" />
+
+    <!-- EditText para escribir el mensaje -->
     <EditText
         android:id="@+id/message"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter a message"
-        android:ems="10" />
+        android:layout_height="56dp"
+        android:hint="Escribe un mensaje"
+        android:padding="12dp"
+        android:minHeight="48dp" /> <!-- Asegúrate de que la etiqueta esté correctamente cerrada -->
 
+    <!-- Botón para enviar el mensaje -->
     <Button
         android:id="@+id/send"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Send Message"
-        android:onClick="onSendMessage" />
+        android:layout_height="48dp"
+        android:minWidth="120dp"
+        android:text="Enviar"
+        android:onClick="onSendMessage"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Botón para enviar el mensaje" />
 </LinearLayout>
